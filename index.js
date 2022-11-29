@@ -32,7 +32,7 @@ mongoose.connect('mongodb://0.0.0.0:27017/ebill').then(()=>{
     console.log(err);
 })
 
-app.post('/customer',(req, res)=>{
+app.get('/',(req, res)=>{
     console.log(req.body);
     res.end('Hello!')
 });
